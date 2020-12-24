@@ -1,5 +1,11 @@
-import mongoose from 'mongoose'
+import mongoose, { ConnectOptions } from 'mongoose'
 import config from './config/config'
+
+const dbOptions:ConnectOptions = {
+    useNewUrlParser:true,
+    useUnifiedTopology:true
+
+}
 
 mongoose.connect(config.DB.URI)
 
