@@ -3,7 +3,8 @@ import config from './config/config'
 
 const dbOptions:ConnectOptions = {
     useNewUrlParser:true,
-    useUnifiedTopology:true
+    useUnifiedTopology:true,
+    useCreateIndex:true
 
 }
 
